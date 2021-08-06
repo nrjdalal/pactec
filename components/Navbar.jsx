@@ -38,7 +38,7 @@ const Navbar = () => {
               <Image
                 src="/logo.webp"
                 alt=""
-                width={216}
+                width={156}
                 height={36}
                 objectFit="contain"
               />
