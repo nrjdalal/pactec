@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="sticky top-0 z-10 bg-sky-900 border-opacity-5">
+      <header className="sticky top-0 z-10 bg-sky-900 border-opacity-5 border-b-2">
         <div className="mod-container h-20 flex justify-between items-center cursor-default">
           <Link href="/">
             <a className="pt-2">
