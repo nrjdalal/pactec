@@ -1,7 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from 'next/image'
-
-import { ContentOnRight } from 'components/Universal'
 
 const Clients = () => {
   return (

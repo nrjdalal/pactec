@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -5,11 +6,15 @@ const Navbar = () => {
   const Deskdown = (props) => {
     return (
       <>
-        <div className="flex items-center px-4 py-1 rounded hover:bg-sky-500">
-          <span className="text-lg text-white tracking-widest">
-            {props.title}
-          </span>
-        </div>
+        <Link href={props.href}>
+          <a>
+            <div className="flex items-center px-4 py-1 rounded hover:bg-sky-500">
+              <span className="text-lg text-white tracking-widest">
+                {props.title}
+              </span>
+            </div>
+          </a>
+        </Link>
       </>
     )
   }
@@ -31,13 +36,15 @@ const Navbar = () => {
           </Link>
 
           <nav className="hidden lg:flex mr-[-0.5rem]">
-            <Deskdown title="About Us" />
-            <Deskdown title="Services" />
-            <Deskdown title="Process" />
-            <Deskdown title="Partners" />
-            <button className="text-white tracking-widest mx-4 px-4 bg-red-500 hover:bg-sky-600 rounded">
-              CONTACT
-            </button>
+            <Deskdown title="About Us" href="/about-us" />
+            <Deskdown title="Services" href="/services" />
+            <Deskdown title="Process" href="/process" />
+            <Deskdown title="Partners" href="/partners" />
+            <Link href="/contact">
+              <button className="text-white tracking-widest mx-4 px-4 bg-red-500 hover:bg-sky-600 rounded">
+                CONTACT
+              </button>
+            </Link>
           </nav>
 
           <svg
