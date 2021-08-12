@@ -7,7 +7,7 @@ const index = () => {
     <>
       <Hero />
       <Clients />
-      {/* <DDM /> */}
+      <DDM />
     </>
   )
 }

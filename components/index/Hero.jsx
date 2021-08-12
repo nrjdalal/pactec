@@ -21,19 +21,9 @@ const Hero = () => {
         </svg>
         {/* Hero Section */}
         <div className="relative mod-container flex flex-col md:flex-row md:items-center">
-          {/* Image */}
-          <div className="rounded-2xl w-36 h-36 md:w-72 md:h-72 overflow-hidden">
-            <Image
-              src="/images/index/hero.webp"
-              alt=""
-              height={576}
-              width={576}
-              objectFit="cover"
-            />
-          </div>
           {/* h1 h2 button */}
-          <div className="flex-1 md:ml-8">
-            <h1 className="font-semibold text-4xl mt-6 md:mt-0 text-gray-100">
+          <div className="flex-1 md:mr-8">
+            <h1 className="font-semibold text-4xl text-gray-100">
               Looking to Grow your Business in Australia and New Zealand?
             </h1>
             <h2 className="lg:text-xl mt-4 text-gray-200">
@@ -42,12 +32,23 @@ const Hero = () => {
               <br />
               Let us take you there.
             </h2>
-            <button className="bg-red-500 text-white w-40 py-2.5 rounded-lg mt-8 text-lg tracking-wider hover:bg-red-600">
+            <button className="bg-red-500 text-white w-36 py-2.5 rounded-lg mt-8 text-lg tracking-wider hover:bg-red-600">
               Vendors
             </button>
-            <button className="bg-white text-red-500 w-40 mx-4 py-2.5 rounded-lg mt-8 text-lg tracking-wider hover:bg-gray-200">
+            <button className="bg-white text-red-500 w-36 mx-4 py-2.5 rounded-lg mt-8 text-lg tracking-wider hover:bg-gray-200">
               Resellers
             </button>
+          </div>
+
+          {/* Image */}
+          <div className="hidden lg:block lg:w-[480px] lg:h-[640px]">
+            <Image
+              src="/images/index/hero.svg"
+              alt=""
+              height={640}
+              width={480}
+              objectFit="cover"
+            />
           </div>
         </div>
       </section>
